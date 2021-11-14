@@ -1,7 +1,7 @@
 # Flappie Birdie - A Vanilla JavaScript Take on a Classic
 Have you ever wanted to play a quick game of a certain popular app, but emulated using vanilla JavaScript and HTML/CSS? You've come to the right place!
 
-![Demonstration](./images/flappie-birdie-explanation)
+![Demonstration](/images/flappie-birdie-explanation)
 
 ## Overview 
 The game operates exactly like its inspiration, with the user pressing the space bar to keep Flappie Birdie from falling to the ground. There are pipes that may get in the way with which the user is to try and ensure that Flappie does not collide.
