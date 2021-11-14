@@ -11,7 +11,10 @@ export function setupBird(){
     //remove here bc once the game starts, event listeners will compound otherwise
     document.removeEventListener('keydown', handleJump);
     document.addEventListener('keydown', handleJump);
-
+    document.removeEventListener('touchstart', handleJump);
+    document.addEventListener('touchstart', handleJump);
+    document.removeEventListener('click', handleJump);
+    document.addEventListener('click', handleJump);
 }
 
 export function updateBird(delta){

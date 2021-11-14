@@ -5,6 +5,7 @@ import {updatePipes, setupPipes, getPipesPastCount, getPipeRects} from './pipe.j
 //allows for user to start game by pressing a key; set to once to prevent restarts
 document.addEventListener('keypress', handleStart, {once: true});
 document.addEventListener('touchend', handleStart, {once: true});
+document.addEventListener('click', handleStart, {once: true});
 const title = document.querySelector('[data-title]');
 const subtitle = document.querySelector('[data-subtitle]');
 
@@ -64,6 +65,7 @@ function handleLose(){
         if(getPipesPastCount() < 2) subtitle.textContent = `You can do better than that...`;
         else subtitle.textContent = `You passed ${getPipesPastCount()} pipes!`;
         document.addEventListener('keypress', handleStart, {once: true});
-        document.addEventListener('touchend', handleStart, {once: true});
+        document.addEventListener('touchstart', handleStart, {once: true});
+        document.addEventListener('click', handleStart, {once: true});
     }, 100)
 }
